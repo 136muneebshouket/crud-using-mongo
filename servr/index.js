@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 
 // mongoose.connect("mongodb+srv://root:root@cluster0.fsahq.mongodb.net/test")
-mongoose.connect("mongodb+srv://mirza:mirza@cluster0.m1s8oai.mongodb.net/test")
+mongoose.connect(".mongodb.net/test")
 app.get("/getUsers", (request, response) => {
     UserModel.find({}, (err, result) => {
         if (!err) {
